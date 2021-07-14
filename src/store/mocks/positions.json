@@ -1,0 +1,308 @@
+[
+  {
+    "Product": "NRML",
+    "Instrument": "HINDUNILVR21JUL2300PE",
+    "Qty": -300,
+    "Avg": 8.2,
+    "LTP": 5.2,
+    "P&L": 900,
+    "Chg": -36.59
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "INDUSTOWER21JUL220PE",
+    "Qty": -2800,
+    "Avg": 2.2,
+    "LTP": 1.35,
+    "P&L": 2380,
+    "Chg": -38.64
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "INDUSTOWER21JUL270CE",
+    "Qty": -2800,
+    "Avg": 1.35,
+    "LTP": 1,
+    "P&L": 980,
+    "Chg": -25.93
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "IOC21JUL105PE",
+    "Qty": -6500,
+    "Avg": 1.2,
+    "LTP": 1.2,
+    "P&L": 0,
+    "Chg": 0
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "ITC21JUL200PE",
+    "Qty": -3200,
+    "Avg": 2.25,
+    "LTP": 2.5,
+    "P&L": -800,
+    "Chg": 11.11
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY2171515350CE",
+    "Qty": 300,
+    "Avg": 361,
+    "LTP": 359.4,
+    "P&L": -480,
+    "Chg": -0.44
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY2171515450CE",
+    "Qty": -300,
+    "Avg": 268.8,
+    "LTP": 238.05,
+    "P&L": 9225,
+    "Chg": -11.44
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY2171516000CE",
+    "Qty": -300,
+    "Avg": 12.1,
+    "LTP": 4.65,
+    "P&L": 2235,
+    "Chg": -61.57
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY2171516100CE",
+    "Qty": 300,
+    "Avg": 6.55,
+    "LTP": 3,
+    "P&L": -1065,
+    "Chg": -54.2
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG14500PE",
+    "Qty": 100,
+    "Avg": 19.65,
+    "LTP": 24.45,
+    "P&L": 480,
+    "Chg": 24.43
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG15000PE",
+    "Qty": 100,
+    "Avg": 89.08,
+    "LTP": 69,
+    "P&L": -2007.5,
+    "Chg": -22.54
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG15700CE",
+    "Qty": -100,
+    "Avg": 324.5,
+    "LTP": 302.95,
+    "P&L": 2155,
+    "Chg": -6.64
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG15700PE",
+    "Qty": -100,
+    "Avg": 290.5,
+    "LTP": 254.4,
+    "P&L": 3610,
+    "Chg": -12.43
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG15900CE",
+    "Qty": -100,
+    "Avg": 302.68,
+    "LTP": 200,
+    "P&L": 10267.5,
+    "Chg": -33.92
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG15900PE",
+    "Qty": -100,
+    "Avg": 270.3,
+    "LTP": 347.65,
+    "P&L": -7735,
+    "Chg": 28.62
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21AUG17000CE",
+    "Qty": 200,
+    "Avg": 16.95,
+    "LTP": 8.75,
+    "P&L": -1640,
+    "Chg": -48.38
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21JUL15000PE",
+    "Qty": 200,
+    "Avg": 51,
+    "LTP": 19.65,
+    "P&L": -6270,
+    "Chg": -61.47
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21JUL15350PE",
+    "Qty": -100,
+    "Avg": 71.6,
+    "LTP": 54,
+    "P&L": 1760,
+    "Chg": -24.58
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21JUL15500PE",
+    "Qty": -100,
+    "Avg": 101.05,
+    "LTP": 90,
+    "P&L": 1105,
+    "Chg": -10.94
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21JUL16100CE",
+    "Qty": -200,
+    "Avg": 44.1,
+    "LTP": 29.6,
+    "P&L": 2900,
+    "Chg": -32.88
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "NIFTY21JUL17000CE",
+    "Qty": 200,
+    "Avg": 8,
+    "LTP": 4,
+    "P&L": -800,
+    "Chg": -50
+  },
+  {
+    "Product": "NRML",
+    "Instrument": "POWERGRID21JUL260CE",
+    "Qty": -4000,
+    "Avg": 0.65,
+    "LTP": 0.55,
+    "P&L": 400,
+    "Chg": -15.38
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515000PE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 1.65,
+    "P&L": -8145,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515450PE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 9.55,
+    "P&L": -17497.5,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515500PE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 15.1,
+    "P&L": -85245,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515550PE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 22.35,
+    "P&L": 21270,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515600PE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 34.3,
+    "P&L": -15933.75,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515800CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 30.5,
+    "P&L": -27108.75,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515850CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 18,
+    "P&L": -21078.75,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515900CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 10.5,
+    "P&L": 47951.25,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171515950CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 6.7,
+    "P&L": 24251.25,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171516000CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 4.65,
+    "P&L": 14583.75,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171516050CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 3.4,
+    "P&L": 375,
+    "Chg": 0
+  },
+  {
+    "Product": "MIS",
+    "Instrument": "NIFTY2171516300CE",
+    "Qty": 0,
+    "Avg": 0,
+    "LTP": 2,
+    "P&L": -5460,
+    "Chg": 0
+  }
+]
