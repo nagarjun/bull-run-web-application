@@ -9,7 +9,7 @@
     </header>
 
     <main>
-      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div class="mx-auto py-6 sm:px-6 lg:px-8" :class="mainClasses">
         <slot />
       </div>
     </main>
@@ -26,7 +26,15 @@ export default defineComponent({
     NavBar,
   },
   props: {
+    fluidWidth: { type: Boolean, default: false },
     title: { type: String, required: true },
+  },
+  data() {
+    return {
+      mainClasses: {
+        'max-w-7xl': !this.fluidWidth,
+      },
+    };
   },
   beforeMount() {
     document.title = `${this.title} - BullRun`;

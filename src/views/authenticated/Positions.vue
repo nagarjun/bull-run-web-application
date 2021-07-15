@@ -1,7 +1,8 @@
 <template>
-  <authenticated-frame title="Positions">
-    <div class="flex flex-col mb-5">
-      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+  <authenticated-frame fluidWidth title="Positions">
+    <div class="flex flex-row gap-x-10 mb-5">
+      <!-- Table -->
+      <div class="flex-grow -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
           <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
             <table class="min-w-full divide-y divide-gray-200">
@@ -55,7 +56,7 @@
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
-                <tr v-for="p in positions" :key="p.product">
+                <tr v-for="p in positions" :key="p.Instrument">
                   <td class="px-6 py-4 bg-white whitespace-nowrap text-sm font-medium text-gray-900">
                     <input
                       type="checkbox"
@@ -109,18 +110,35 @@
           </div>
         </div>
       </div>
+
+      <!-- Position Spreads -->
+      <div class="flex flex-col gap-y-5 w-96">
+        <!-- Empty State -->
+        <div class="w-full border-2 border-gray-300 border-dashed rounded-lg p-12 text-center">
+          <CurrencyRupeeIcon class="mx-auto text-gray-400 w-10 h-10" aria-hidden="true" />
+          <span class="mt-3 block text-sm font-medium text-gray-900">
+            No Spreads to monitor. Select two or more positions to create a Spread.
+          </span>
+        </div>
+
+        <Button>View Past Spreads</Button>
+      </div>
     </div>
   </authenticated-frame>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { CurrencyRupeeIcon } from '@heroicons/vue/outline';
 import AuthenticatedFrame from '@/components/AuthenticatedFrame.vue';
+import Button from '@/components/Buttons.vue';
 
 export default defineComponent({
   name: 'Positions',
   components: {
+    CurrencyRupeeIcon,
     AuthenticatedFrame,
+    Button,
   },
   data() {
     return {
