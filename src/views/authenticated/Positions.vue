@@ -61,6 +61,7 @@
                     <input
                       type="checkbox"
                       class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                      @change="toggleSelection(p)"
                     />
                   </td>
                   <td class="px-6 py-4 bg-white whitespace-nowrap text-sm font-medium text-gray-900">
@@ -114,14 +115,41 @@
       <!-- Position Spreads -->
       <div class="flex flex-col gap-y-5 w-96">
         <!-- Empty State -->
-        <div class="w-full border-2 border-gray-300 border-dashed rounded-lg p-12 text-center">
+        <div
+          class="w-full border-2 border-gray-300 border-dashed rounded-lg p-12 text-center"
+          v-if="selectedPositions.length < 2"
+        >
           <CurrencyRupeeIcon class="mx-auto text-gray-400 w-10 h-10" aria-hidden="true" />
           <span class="mt-3 block text-sm font-medium text-gray-900">
             No Spreads to monitor. Select two or more positions to create a Spread.
           </span>
         </div>
 
-        <Button>View Past Spreads</Button>
+        <!-- Individual Spread -->
+        <div v-else>
+          <position-spread :positions="selectedPositions" />
+        </div>
+
+        <button
+          type="button"
+          class="
+            flex
+            justify-center
+            px-4
+            py-2
+            border border-gray-300
+            shadow-sm
+            text-sm
+            font-medium
+            rounded-md
+            text-gray-700
+            bg-white
+            hover:bg-gray-50
+            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+          "
+        >
+          View Past Spreads
+        </button>
       </div>
     </div>
   </authenticated-frame>
@@ -131,19 +159,28 @@
 import { defineComponent } from 'vue';
 import { CurrencyRupeeIcon } from '@heroicons/vue/outline';
 import AuthenticatedFrame from '@/components/AuthenticatedFrame.vue';
-import Button from '@/components/Buttons.vue';
+import PositionSpread from '@/components/PositionSpread.vue';
+import { Positions } from '@/store/index';
 
 export default defineComponent({
   name: 'Positions',
   components: {
     CurrencyRupeeIcon,
     AuthenticatedFrame,
-    Button,
+    PositionSpread,
   },
   data() {
     return {
       positions: this.$store.state.positions.default,
+      selectedPositions: [] as Positions[],
     };
+  },
+  methods: {
+    toggleSelection(selected: Positions) {
+      const positions = JSON.parse(JSON.stringify(this.selectedPositions));
+      positions.push(selected);
+      this.selectedPositions = positions;
+    },
   },
 });
 </script>

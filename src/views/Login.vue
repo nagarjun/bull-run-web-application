@@ -11,7 +11,7 @@
 
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
       <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-        <form class="space-y-6" action="#" method="POST">
+        <form class="space-y-6" @submit.prevent="submitForm">
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
             <div class="mt-1">
@@ -81,7 +81,7 @@
           </div>
 
           <div>
-            <Button type="submit">Log in</Button>
+            <Button type="submit" :loading="submittingForm">Log in</Button>
           </div>
         </form>
       </div>
@@ -97,6 +97,19 @@ export default defineComponent({
   name: 'Login',
   components: {
     Button,
+  },
+  data() {
+    return {
+      submittingForm: false,
+    };
+  },
+  methods: {
+    submitForm() {
+      this.submittingForm = true;
+      setTimeout(() => {
+        this.$router.push('/positions');
+      }, 1000);
+    },
   },
 });
 </script>
